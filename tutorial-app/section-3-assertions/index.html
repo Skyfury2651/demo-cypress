@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phần 3: Khẳng định (Assertions)</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            padding: 2rem;
+            background: #f0f4f8;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #2d3748;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .disabled {
+            opacity: 0.5;
+            pointer-events: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Phần 3: Khẳng định</h1>
+        <p>Học cách sử dụng <code>.should('be.visible')</code>, <code>.should('have.text')</code>, và nhiều hơn nữa.</p>
+
+        <div class="section">
+            <h2>Hiển thị (Visibility)</h2>
+            <p id="visible-text">Tôi đang hiển thị</p>
+            <p id="hidden-text" class="hidden">Tôi đang bị ẩn</p>
+        </div>
+
+        <div class="section">
+            <h2>Trạng thái (State)</h2>
+            <button id="enabled-btn">Nút đang bật</button>
+            <button id="disabled-btn" disabled>Nút đang tắt</button>
+        </div>
+
+        <div class="section">
+            <h2>Thuộc tính (Attributes)</h2>
+            <a href="https://cypress.io" id="link">Liên kết Cypress</a>
+        </div>
+
+        <div class="section">
+            <h2>Nội dung (Content)</h2>
+            <ul id="fruit-list">
+                <li>Táo (Apple)</li>
+                <li>Chuối (Banana)</li>
+                <li>Anh đào (Cherry)</li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phần 2: Hành động & Tương tác</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            padding: 2rem;
+            background: #f0f4f8;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #2d3748;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        select {
+            width: 100%;
+            padding: 0.5rem;
+            border: 1px solid #cbd5e0;
+            border-radius: 4px;
+        }
+
+        .success-message {
+            color: green;
+            display: none;
+            margin-top: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Phần 2: Hành động</h1>
+        <p>Học cách sử dụng <code>.type()</code>, <code>.click()</code>, và <code>.select()</code>.</p>
+
+        <div class="form-group">
+            <label for="name">Tên của bạn</label>
+            <input type="text" id="name" placeholder="Nhập tên vào đây...">
+        </div>
+
+        <div class="form-group">
+            <label>Giới tính</label>
+            <input type="radio" name="gender" value="male" id="male"> <label style="display:inline"
+                for="male">Nam</label>
+            <input type="radio" name="gender" value="female" id="female"> <label style="display:inline"
+                for="female">Nữ</label>
+        </div>
+
+        <div class="form-group">
+            <label for="country">Quốc gia</label>
+            <select id="country">
+                <option value="">Chọn quốc gia...</option>
+                <option value="usa">Mỹ (USA)</option>
+                <option value="uk">Anh (UK)</option>
+                <option value="vn">Việt Nam</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <input type="checkbox" id="terms"> <label style="display:inline" for="terms">Tôi đồng ý với các điều
+                khoản</label>
+        </div>
+
+        <button id="submit-btn" onclick="document.getElementById('success').style.display='block'">Gửi</button>
+
+        <p id="success" class="success-message">Biểu mẫu đã được gửi thành công!</p>
+    </div>
+</body>
+
+</html>

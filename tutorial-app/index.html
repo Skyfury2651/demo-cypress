@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hướng dẫn Học Cypress</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+            background-color: #f8fafc;
+        }
+
+        .card {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            margin-bottom: 2rem;
+        }
+
+        h1 {
+            color: #1e293b;
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 0.5rem;
+        }
+
+        h2 {
+            color: #334155;
+            margin-top: 1.5rem;
+        }
+
+        code {
+            background: #f1f5f9;
+            padding: 0.2rem 0.4rem;
+            border-radius: 4px;
+            font-weight: 600;
+            color: #475569;
+        }
+
+        .steps {
+            list-style: none;
+            padding: 0;
+        }
+
+        .steps li {
+            margin-bottom: 1rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .steps li::before {
+            content: "✅";
+            position: absolute;
+            left: 0;
+        }
+
+        .nav-links {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .nav-button {
+            display: block;
+            padding: 1rem;
+            background: #3b82f6;
+            color: white;
+            text-decoration: none;
+            text-align: center;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: background 0.2s;
+        }
+
+        .nav-button:hover {
+            background: #2563eb;
+        }
+
+        .highlight {
+            color: #2563eb;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <h1>Chào mừng bạn đến với Hướng dẫn Cypress! 🚀</h1>
+        <p>Ứng dụng này được thiết kế để giúp bạn học kiểm thử tự động từ con số 0.</p>
+
+        <h2>Cách chạy các bài kiểm tra</h2>
+        <ul class="steps">
+            <li><strong>Bước 1:</strong> Đảm bảo server đang chạy (chính là trang bạn đang xem!).</li>
+            <li><strong>Bước 2:</strong> Trong terminal của bạn, chạy lệnh <code class="highlight">npm run dev</code>.
+            </li>
+            <li><strong>Bước 3:</strong> Giao diện Cypress sẽ mở ra. Chọn <strong>E2E Testing</strong>.</li>
+            <li><strong>Bước 4:</strong> Chọn một trình duyệt (ví dụ: Chrome) và nhấn <strong>Start E2E
+                    Testing</strong>.</li>
+            <li><strong>Bước 5:</strong> Nhấn vào bất kỳ file spec nào (ví dụ: <code>section-1.cy.js</code>) để xem nó
+                chạy!</li>
+        </ul>
+
+        <h2>Các phần học</h2>
+        <div class="nav-links">
+            <a href="section-1-basics/index.html" class="nav-button">Phần 1: Selectors</a>
+            <a href="section-2-actions/index.html" class="nav-button">Phần 2: Hành động</a>
+            <a href="section-3-assertions/index.html" class="nav-button">Phần 3: Khẳng định</a>
+        </div>
+    </div>
+</body>
+
+</html>

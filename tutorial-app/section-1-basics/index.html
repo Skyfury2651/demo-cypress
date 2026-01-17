@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phần 1: Selectors & Cơ bản</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            padding: 2rem;
+            background: #f0f4f8;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #2d3748;
+        }
+
+        .element-box {
+            border: 1px solid #e2e8f0;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            border-radius: 4px;
+        }
+
+        code {
+            background: #edf2f7;
+            padding: 0.2rem 0.4rem;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Phần 1: Selectors</h1>
+        <p>Trong phần này, bạn sẽ học cách tìm các thành phần bằng <code>cy.get()</code> và <code>cy.contains()</code>.
+        </p>
+
+        <div class="element-box">
+            <h2 id="main-title">Tìm theo ID</h2>
+            <p>Sử dụng <code>#main-title</code> để tìm</p>
+        </div>
+
+        <div class="element-box">
+            <button class="btn btn-primary">Nút với Class</button>
+            <p>Sử dụng <code>.btn-primary</code> để tìm</p>
+        </div>
+
+        <div class="element-box">
+            <input type="text" name="username" placeholder="Nhập tên đăng nhập">
+            <p>Sử dụng <code>[name="username"]</code> để tìm</p>
+        </div>
+
+        <div class="element-box">
+            <button data-cy="submit-button">Selector Bảo mật</button>
+            <p>Sử dụng <code>[data-cy="submit-button"]</code> (Khuyên dùng - Best Practice)</p>
+        </div>
+
+        <div class="element-box">
+            <p>Tìm đoạn văn này bằng <code>cy.contains('Tìm đoạn văn')</code></p>
+        </div>
+    </div>
+</body>
+
+</html>

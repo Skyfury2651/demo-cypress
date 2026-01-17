@@ -1,0 +1,13 @@
+{
+  "scripts": {
+    "start": "npx http-server tutorial-app -p 8080",
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run",
+    "dev": "npx start-server-and-test start http://localhost:8080 cypress:open"
+  },
+  "devDependencies": {
+    "cypress": "^15.8.2",
+    "http-server": "^14.1.1",
+    "start-server-and-test": "^2.1.3"
+  }
+}
